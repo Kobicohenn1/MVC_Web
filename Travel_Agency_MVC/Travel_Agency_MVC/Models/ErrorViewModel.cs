@@ -1,4 +1,4 @@
-namespace Testtt1.Models
+namespace Travel_Agency_MVC.Models
 {
     public class ErrorViewModel
     {

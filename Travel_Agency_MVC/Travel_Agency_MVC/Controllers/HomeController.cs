@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Testtt1.Models;
+using Travel_Agency_MVC.Models;
 
-namespace Testtt1.Controllers
+namespace Travel_Agency_MVC.Controllers
 {
     public class HomeController : Controller
     {
