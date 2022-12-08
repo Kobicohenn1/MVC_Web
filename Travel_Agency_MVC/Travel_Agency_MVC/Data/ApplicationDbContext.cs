@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Travel_Agency_MVC.Models;
 
 namespace Travel_Agency_MVC.Data
 {
@@ -11,5 +12,7 @@ namespace Travel_Agency_MVC.Data
 
         //Here starts the model part , at the moment there are no models available so this line is in comment
         //public DbSet<>
+
+        public DbSet<Flight> Flights { get; set; }
     }
 }
