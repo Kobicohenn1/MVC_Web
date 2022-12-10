@@ -3,7 +3,7 @@ using Travel_Agency_MVC.Models;
 
 namespace Travel_Agency_MVC.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<DefaultUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
