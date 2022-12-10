@@ -10,10 +10,10 @@ namespace Travel_Agency_MVC.Models
     public class DefaultUser : IdentityUser
     {
         [PersonalData]
-        [Column(TypeName ="navchar(100)")]
+        [Column(TypeName = "nvarchar(100)")]
         public string FirstName { get; set; }
         [PersonalData]
-        [Column(TypeName = "navchar(100)")]
+        [Column(TypeName = "nvarchar(100)")]
         public string LastName { get; set; }
     }
 }
