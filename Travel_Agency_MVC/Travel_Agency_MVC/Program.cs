@@ -13,10 +13,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     builder.Configuration.GetConnectionString("DefaultConnection")
     ));
 
-builder.Services.AddDefaultIdentity<DefaultUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<DefaultUser>(options => 
+{
+options.Password.RequireUppercase = false;
+options.Password.RequireLowercase = false;
+options.SignIn.RequireConfirmedAccount = false;
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddDefaultIdentity<DefaultUser>().AddEntityFrameworkStores<ApplicationDbContext>();
+//builder.Services.AddDefaultIdentity<DefaultUser>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 var app = builder.Build();
 
